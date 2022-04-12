@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
@@ -51,20 +52,18 @@ class SecondPage extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(
-                            top: 20, bottom: 15, left: 30, right: 30),
+                        margin: EdgeInsets.only(top: 20, left: 30, right: 30),
                         child: Text(
                           "Asociation Halal Food - Japan (Tokyo)",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                             color: Color.fromARGB(255, 51, 66, 87),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
-                            top: 5, left: 30, right: 30, bottom: 20),
+                        padding: EdgeInsets.only(top: 15, left: 30, right: 30),
                         child: RichText(
                           text: TextSpan(
                             style: TextStyle(
@@ -82,15 +81,14 @@ class SecondPage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        // padding: EdgeInsets.only(top: 5, left: 30, bottom: 20),
+                        padding: EdgeInsets.only(top: 15, left: 30, right: 30),
                         child: Image.asset(
                           "assets/images/japan_2.jpg",
                           width: 250,
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
-                            top: 5, left: 30, right: 30, bottom: 20),
+                        padding: EdgeInsets.only(top: 15, left: 30, right: 30),
                         child: RichText(
                           text: TextSpan(
                             style: TextStyle(
@@ -108,8 +106,7 @@ class SecondPage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
-                            top: 5, left: 30, right: 30, bottom: 20),
+                        padding: EdgeInsets.only(top: 15, left: 30, right: 30),
                         child: RichText(
                           text: TextSpan(
                             style: TextStyle(
@@ -127,13 +124,13 @@ class SecondPage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
-                            top: 5, left: 30, right: 30, bottom: 20),
+                        // color: Colors.amber,
+                        padding: EdgeInsets.only(top: 15, left: 30, right: 30),
                         child: Row(children: [
                           Flexible(
-                            flex: 2,
+                            flex: 1,
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              // crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   "Taufik Hidayat",
@@ -147,28 +144,25 @@ class SecondPage extends StatelessWidget {
                             ),
                           ),
                           Flexible(
-                            flex: 2,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                SizedBox(
-                                  width: 120,
-                                )
-                              ],
+                            flex: 1,
+                            child: Container(
+                              color: Colors.blue,
                             ),
                           ),
                           Flexible(
-                            flex: 2,
+                            flex: 1,
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
+                              // mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Icon(Icons.message_rounded),
-                                Text("100"),
-                                SizedBox(
-                                  width: 15,
+                                Icon(
+                                  Icons.message_rounded,
+                                  size: 15,
                                 ),
+                                Text("100"),
+                                Padding(padding: EdgeInsets.only(left: 5)),
                                 Icon(
                                   Icons.remove_red_eye_rounded,
+                                  size: 15,
                                   color: Colors.red,
                                 ),
                                 Text("235")
@@ -179,13 +173,21 @@ class SecondPage extends StatelessWidget {
                       ),
                       Container(
                         padding: EdgeInsets.only(
-                            top: 5, left: 30, right: 30, bottom: 20),
+                          left: 30,
+                          right: 30,
+                          top: 15,
+                        ),
+                        child:
+                            Divider(color: Color.fromARGB(255, 222, 222, 222)),
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(top: 10, left: 30, right: 30),
                         child: Row(
                           children: [
                             Text(
                               "Comments (100)",
                               style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
+                                  fontWeight: FontWeight.bold, fontSize: 15),
                             ),
                             SizedBox(
                               width: 30,
@@ -195,6 +197,7 @@ class SecondPage extends StatelessWidget {
                                 child: Text(
                                   "Add Comment",
                                   style: TextStyle(
+                                      fontSize: 10,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold),
                                 ),
@@ -204,7 +207,7 @@ class SecondPage extends StatelessWidget {
                       ),
                       Container(
                         padding: EdgeInsets.only(
-                            top: 5, left: 30, right: 30, bottom: 20),
+                            top: 15, left: 30, right: 30, bottom: 30),
                         child: RichText(
                           text: TextSpan(
                             style: TextStyle(

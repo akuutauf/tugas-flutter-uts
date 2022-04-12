@@ -42,64 +42,79 @@ class HomePage extends StatelessWidget {
           Container(
             child: Container(
               margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
-              height: 35,
+              padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+              height: 40,
               // color: Colors.blue,
               child: TabBar(
                 labelColor: Colors.white,
+                indicatorColor: Colors.white,
                 unselectedLabelColor: Color.fromARGB(255, 51, 66, 87),
                 indicator: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(20)),
                 tabs: [
                   Tab(
-                    child: Text(
-                      "All",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontSize: 10),
+                    child: FittedBox(
+                      child: Text(
+                        "All",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 51, 66, 87),
+                            fontSize: 8),
+                      ),
                     ),
                   ),
                   Tab(
-                    child: Text(
-                      "Business",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 51, 66, 87), fontSize: 10),
+                    child: FittedBox(
+                      child: Text(
+                        "Business",
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 51, 66, 87)),
+                      ),
                     ),
                   ),
                   Tab(
-                    child: Text(
-                      "Gadgets",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 51, 66, 87), fontSize: 10),
+                    child: FittedBox(
+                      child: Text(
+                        "Gadgets",
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 51, 66, 87),
+                        ),
+                      ),
                     ),
                   ),
                   Tab(
-                    child: Text(
-                      "Sport",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 51, 66, 87), fontSize: 10),
+                    child: FittedBox(
+                      child: Text(
+                        "Sport",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 51, 66, 87),
+                            fontSize: 7),
+                      ),
                     ),
                   ),
                   Tab(
-                    child: Text(
-                      "Video",
-                      style: TextStyle(
-                          color: Color.fromARGB(255, 51, 66, 87), fontSize: 10),
+                    child: FittedBox(
+                      child: Text(
+                        "Video",
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 51, 66, 87),
+                            fontSize: 7),
+                      ),
                     ),
                   ),
                   Tab(
                     child: Row(
                       children: [
                         VerticalDivider(
-                          color: Color.fromARGB(255, 51, 66, 87),
-                          width: 3,
+                          color: Colors.black,
+                          width: 2,
                         ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Image.asset(
-                          "assets/images/setting-lines.png",
-                          width: 25,
+                        Container(
+                          margin: EdgeInsets.only(left: 2),
+                          child: Image.asset(
+                            "assets/images/settings.png",
+                            width: 20,
+                          ),
                         ),
                       ],
                     ),
@@ -155,9 +170,10 @@ class HomePage extends StatelessWidget {
                                                   TextStyle(color: Colors.red),
                                             ),
                                             Text(
-                                              "Monday, 11 April 2022",
-                                              style:
-                                                  TextStyle(color: Colors.grey),
+                                              "11 APR 2022",
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 12),
                                             )
                                           ],
                                         )
@@ -219,9 +235,10 @@ class HomePage extends StatelessWidget {
                                                   TextStyle(color: Colors.red),
                                             ),
                                             Text(
-                                              "Monday, 11 April 2022",
-                                              style:
-                                                  TextStyle(color: Colors.grey),
+                                              "11 APR 2022",
+                                              style: TextStyle(
+                                                  color: Colors.grey,
+                                                  fontSize: 12),
                                             )
                                           ],
                                         )
